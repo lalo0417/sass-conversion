@@ -1,0 +1,7 @@
+@mixin equalSpaced ($num_of_cols, $spacing, $width) {
+    width: ($width - ($spacing * ($num_of_cols - 1))) / $num_of_cols;
+    margin-left: 0;
+    &:first-child {
+        margin-left: 0;
+    }
+}
